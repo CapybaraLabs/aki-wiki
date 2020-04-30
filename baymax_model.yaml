@@ -86,7 +86,7 @@ https://imgur.com/a/5uoVsgl"
 id: bot-broken-votes
 title: "Try this command: `!aki votecheck`. Did that help?"
 branches:
-- message: "Yes! Aki recognizes by vote now."
+- message: "Yes! Aki recognizes my vote now."
   targetId: root
 - message: "No. Aki still says that I have not voted"
   targetId: bot-broken-not-voted
@@ -192,8 +192,8 @@ branches:
   targetId: report-user
 - message: "Someone is breaking the rules!"
   targetId: report-user
-- message: "I can't type in one of the topic channels (art, gaming, etc). How do I get access?"
-  targetId: topic-key
+- message: "I can't type in <#418211031450517505>! How do I gain access?" # #art-posting
+  targetId: art-key
 - message: "I can't set or change my nick. How can I change my nick in this place?"
   targetId: change-nick
 - message: "I want to advertise my community / How do I post in <#486479857732157441>?" # #sponsors
@@ -201,19 +201,19 @@ branches:
 - message: "I want to join staff / become a moderator."
   targetId: join-staff
 - message: "I have a suggestion."
-  targetId: suggestion
+  targetId: server-suggestion
 - message: "I have looked at **all** the options, and none of them helped me."
   targetId: support-role
 
 ---
 id: report-user
-title: "Please report this in <#380426950818398208>. Include screenshots if possible." # #support
-roleId: 487957025012318218 # #needs-help
+title: "Please report this by sending a message to <@575252669443211264> and a staff member will assist you.\n
+Proof is greatly appreciated, as we can't just take it at face value."
 
 ---
-id: topic-key
-title: "Topic Keys are self assignable. Type ``!rank channelname`` in <#367255264761610241> to get access to the channel.\n 
-Example: If you want access to <#418107895507451904>, you'll type ``!rank Gaming.``"
+id: art-key
+title: "You can gain access to this channel either by being Beginner rank (5000 points) or by simply requesting it.\n
+This is done to prevent shitposting in the channel."
 
 ---
 id: change-nick
@@ -234,3 +234,10 @@ that in <#472461981199237140> (we won't be pinging)." # #server-news
 id: support-role
 title: "Please explain your problem to one of our helpers in <#380426950818398208>." # #support
 roleId: 487957025012318218 # #support
+
+---
+id: server-suggestion
+title: "Suggest away in <#646719977600188416>!\n
+Make sure to read the pins first to increase your chances of the suggestion being seen."
+
+---
