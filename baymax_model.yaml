@@ -60,6 +60,10 @@ id: bot-invite
 title: "To add the bot to your own server, navigate to this link: <https://akibot.xyz/invite>"
 
 ---
+id: bot-setting-reactions
+title: "Say `!aki thonks disable / enable` to switch reaction on or off."
+
+---
 id: bot-broken-offline
 title: "Please read <#473155871959023636> and pay attention to any pinned, as well as recent messages." # #bot-status
 branches:
@@ -155,6 +159,10 @@ branches:
 id: bot-question-add-character
 title: "The Aki bot runs off the Akinator database, so to add a character, you would need to add it there.\n 
 Link: <http://akinator.com/>"
+
+---
+id: bot-setting-reactions
+title: "Say `!aki thonks disable / enable` to switch reaction on or off."
 
 ---
 id: bot-question-edit-character
