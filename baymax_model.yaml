@@ -41,6 +41,8 @@ branches:
   targetId: bot-question-edit-character
 - message: "A characters' picture is wrong or there are better ones I want to suggest."
   targetId: bot-question-edit-character
+- message: "Aki keeps reacting to messages when I don't want it to."
+  targetId: bot-setting-reactions
 - message: "Something else is broken"
   targetId: support-role
 
@@ -144,6 +146,8 @@ branches:
   targetId: bot-question-upvote-continue
 - message: "Why do I have to upvote to continue playing Aki past 20 questions?"
   targetId: bot-question-upvote-why
+- message: "How do I stop Aki from reacting to messages?"
+  targetId: bot-setting-reactions
 - message: "What is Evil Aki?"
   targetId: bot-question-evil-aki
 
