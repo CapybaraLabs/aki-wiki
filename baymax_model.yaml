@@ -236,7 +236,8 @@ that in <#472461981199237140> (we won't be pinging)." # #server-news
 
 ---
 id: support-role
-title: "Please explain your problem to one of our helpers in <#380426950818398208>." # #support
+title: "Please explain your problem to one of our helpers in <#380426950818398208>.\n
+When writing your message in <#380426950818398208>, make a list of the steps or commands you have tried already, and include screenshots if possible." # #support
 roleId: 487957025012318218 # #support
 
 ---
