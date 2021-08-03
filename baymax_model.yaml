@@ -198,6 +198,8 @@ branches:
   targetId: report-user
 - message: "I can't type in <#418211031450517505>! How do I gain access?" # #art-posting
   targetId: art-key
+- message: "I lost access to <#799671164896149514>, how do I gain that back?" # #debates
+  targetId: debate-key
 - message: "I can't set or change my nick. How can I change my nick in this place?"
   targetId: change-nick
 - message: "I want to advertise my community / How do I post in <#486479857732157441>?" # #sponsors
@@ -218,6 +220,11 @@ Proof is greatly appreciated, as we can't just take it at face value."
 id: art-key
 title: "You can gain access to this channel either by being Beginner rank (5000 points) or by simply requesting it.\n
 This is done to prevent shitposting in the channel."
+
+---
+id: debate-key
+title: "If you troll in or misuse a channel under the Serious category (e.g. <#799671164896149514>), you will be barred from using that channel again.\n
+You can attempt to appeal this punishment by pinging a staff member and asking directly." # #debates
 
 ---
 id: change-nick
