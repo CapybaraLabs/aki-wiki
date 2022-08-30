@@ -35,14 +35,10 @@ branches:
   targetId: bot-broken-not-responding
 - message: "Aki is sending blank messages."
   targetId: bot-broken-blank-messages
-- message: "Aki keeps asking for a vote, but I have voted already."
-  targetId: bot-broken-votes
 - message: "A characters' name is wrong or has a typo."
   targetId: bot-question-edit-character
 - message: "A characters' picture is wrong or there are better ones I want to suggest."
   targetId: bot-question-edit-character
-- message: "Aki keeps reacting to messages when I don't want it to."
-  targetId: bot-setting-reactions
 - message: "Something else is broken"
   targetId: support-role
 
@@ -75,8 +71,9 @@ roleId: 487957025012318218 # #needs-help
 
 ---
 id: bot-broken-not-responding
-title: "If Aki is not responding, did you maybe change the prefix? Say `@Aki#9694 prefix` to check Aki's current prefix.\n
-Also make sure Aki has permissions to read and write in the channel you want it to be able to respond."
+title: "Starting September 2022, Aki does not support custom prefixes anymore. Please use /slash commands, or the mention prefix like `@Aki start`\n
+Also make sure Aki has permissions to read and write in the channel you want it to be able to respond. You also need the permission to run slash commands in the channel.\n
+You may have to reinvite Aki and allow it to add Slash commands to your server. Here is the invite link: <https://akibot.xyz/invite>"
 
 ---
 id: bot-broken-blank-messages
@@ -85,32 +82,11 @@ In your Discord client, navigate to Settings > Text & Images and enable the opti
 https://imgur.com/a/5uoVsgl"
 
 ---
-id: bot-broken-votes
-title: "Try this command: `!aki votecheck`. Did that help?"
-branches:
-- message: "Yes! Aki recognizes my vote now."
-  targetId: root
-- message: "No. Aki still says that I have not voted"
-  targetId: bot-broken-not-voted
-
----
-id: bot-broken-not-voted
-title: "Make sure you are logged in with the exact same account on the website, as you are using in your Discord client. 
-You can see your logged in account by going to <https://discordbots.org/me>."
-branches:
-- message: "Woops, I was logged into the wrong account. I have logged into the correct one and voted, and things are working."
-  targetId: root
-- message: "Nope, I am 100% sure that I am logged into the same account."
-  targetId: let-us-know
-
----
 id: bot-setting
 title: "What setting of the Aki bot do you want to change?"
 branches:
 - message: "The language"
   targetId: bot-setting-language
-- message: "Turn reactions on or off"
-  targetId: bot-setting-reactions
 - message: "The prefix"
   targetId: bot-setting-prefix
 - message: "Restrict it to a single channel"
@@ -118,19 +94,15 @@ branches:
 
 ---
 id: bot-setting-language
-title: "Say `!aki lang` to start changing your preferred language. If you want to change the default language for the entire server, you can add `--guild` to the end of the command, like so: `!aki lang en --guild`"
-
----
-id: bot-setting-reactions
-title: "Say `!aki thonks disable / enable` to switch reaction on or off."
+title: "Say `/language` to start changing your own or your servers' preferred language."
 
 ---
 id: bot-setting-prefix
-title: "Say `!aki prefix <new prefix>` to change Aki's prefix. Say `@Aki#9694 prefix reset` to reset Aki's prefix."
+title: "Starting September 2022, Aki does not support custom prefixes anymore. Please use /slash commands, or the mention prefix like `@Aki start`"
 
 ---
 id: bot-setting-restrict
-title: "Use the Discord permissions to take away Akis write permissions for all the channels where it should not talk in."
+title: "Use the Discord permissions to take away Akis write permissions for all the channels where it should not talk in and users should not run Slash commands in."
 
 ---
 id: bot-question
@@ -142,39 +114,18 @@ branches:
   targetId: bot-question-edit-character
 - message: "How do I add Aki to my server?"
   targetId: bot-invite
-- message: "How do I continue my game after upvoting?"
-  targetId: bot-question-upvote-continue
-- message: "Why do I have to upvote to continue playing Aki past 20 questions?"
-  targetId: bot-question-upvote-why
-- message: "How do I stop Aki from reacting to messages?"
-  targetId: bot-setting-reactions
 - message: "What is Evil Aki?"
   targetId: bot-question-evil-aki
 
 ---
 id: bot-question-add-character
 title: "The Aki bot runs off the Akinator database, so to add a character, you would need to add it there.\n 
-Link: <http://akinator.com/>"
+Link: <https://akinator.com/>"
 
 ---
 id: bot-question-edit-character
 title: "The Aki bot runs off the Akinator database, so to fix a typo or change a picture you would need to do that there.\n 
-Link: <http://akinator.com/>"
-
----
-id: bot-question-upvote-continue
-title: "Once you've upvoted, you should receive a DM from Aki confirming that he received your upvote. At that point, you can continue your game.\n 
-- If you're unable to, type `!aki votecheck` to run a manual check for your vote.\n 
-- If Aki can't find your vote, make sure you're logged into the same account on the browser version of Discord."
-
----
-id: bot-question-upvote-why
-title: "Contrary to popular belief, Aki does not run on thin air. It runs on servers and time invested. Servers cost money; a lot more money than you think servers would cost. The time it takes to ensure everything works and looks nice is far more complicated than others may believe.\n
-\n
-These are your options:\n
-- Support the bot's upkeep by becoming a patron: <https://www.patreon.com/napster>\n
-- Upvote the bot every day.\n
-- Don't use it."
+Link: <https://akinator.com/>"
 
 ---
 id: bot-question-evil-aki
