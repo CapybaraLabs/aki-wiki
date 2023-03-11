@@ -41,6 +41,8 @@ branches:
   targetId: bot-question-edit-character
 - message: "A characters' picture is wrong or there are better ones I want to suggest."
   targetId: bot-question-edit-character
+- message: "Aki said something rude."
+  targetId: bot-is-rude
 - message: "Something else is broken"
   targetId: support-role
 
@@ -157,6 +159,20 @@ Link: <https://akinator.com/>"
 id: bot-question-edit-character
 title: "The Aki bot runs off the Akinator database, so to fix a typo or change a picture you would need to do that there.\n 
 Link: <https://akinator.com/>"
+
+
+---
+id: bot-is-rude
+title: "Akis translations are community driven. Sometimes their quality can be substandard. Feel free to switch back to English."
+branches:
+- message: "I want to help improve the translations."
+  targetId: crowdin
+- message: "I want to change the language of the bot."
+  targetId: bot-setting-language
+
+---
+id: crowdin
+title: "You can help improve the translations at <https://translate.akibot.xyz>."
 
 ---
 id: bot-question-evil-aki
