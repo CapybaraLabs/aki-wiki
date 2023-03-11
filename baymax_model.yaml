@@ -31,6 +31,8 @@ title: "What about Aki is broken?"
 branches:
 - message: "Aki is not online."
   targetId: bot-broken-not-online
+- message: "Akis /slash commands are not showing up."
+  targetId: bot-broken-no-slash-commands
 - message: "Aki isn't responding."
   targetId: bot-broken-not-responding
 - message: "Aki is sending blank messages."
@@ -70,10 +72,39 @@ title: "Please let us know about this in <#380426950818398208>." # #support
 roleId: 487957025012318218 # #needs-help
 
 ---
+id: bot-broken-no-slash-commands
+title: "Please check all of these steps to find out why /slash commands are not showing up:"
+branches:
+- message: "Are there a lot of bots in your server?"
+  targetId: bot-broken-no-slash-commands-many-bots
+- message: "Is Aki added to your server as a /slash commands application?"
+  targetId: bot-broken-no-slash-commands-application-added
+- message: "Is the /slash permission setup correct?"
+  targetId: bot-broken-no-slash-commands-application-permissions
+- message: "Do you and your users have Application Commands permissions in that channel?"
+  targetId: bot-broken-no-slash-commands-channel-permissions
+
+---
+id: bot-broken-no-slash-commands-many-bots
+title: "Discord caps the amount of bots that can register /slash commands in your server at 25. You may have to kick some other bots and reinvite Aki to fix this."
+
+---
+id: bot-broken-no-slash-commands-application-added
+title: "Open your server settings and check if Aki is added properly: https://i.imgur.com/q0pUVuh.png"
+
+---
+id: bot-broken-no-slash-commands-application-permissions
+title: "Open your server settings and review Akis /slash permissions. Try resetting them to the default and see if things start working again: https://i.imgur.com/muvNF2u.png"
+
+---
+id: bot-broken-no-slash-commands-channel-permissions
+title: "Try running the command in a different channel, or open your channel settings and review the permission setup. Make sure Application Commands are permitted."
+
+---
 id: bot-broken-not-responding
-title: "Starting September 2022, Aki does not support custom prefixes anymore. Please use /slash commands, or the mention prefix like `@Aki start`\n
-Also make sure Aki has permissions to read and write in the channel you want it to be able to respond. You also need the permission to run slash commands in the channel.\n
-You may have to reinvite Aki and allow it to add Slash commands to your server. Here is the invite link: <https://akibot.xyz/invite>"
+title: "Starting September 2022, Aki does not support custom prefixes or !aki anymore. Please use /slash commands.\n
+Make sure you and your members have the permission to run application commands in the channel.\n
+You may have to reinvite Aki and allow it to add /slash commands to your server. Here is the invite link: <https://akibot.xyz/invite>"
 
 ---
 id: bot-broken-blank-messages
@@ -98,11 +129,11 @@ title: "Say `/language` to start changing your own or your servers' preferred la
 
 ---
 id: bot-setting-prefix
-title: "Starting September 2022, Aki does not support custom prefixes anymore. Please use /slash commands, or the mention prefix like `@Aki start`"
+title: "Starting September 2022, Aki does not support custom prefixes anymore. Please use /slash commands."
 
 ---
 id: bot-setting-restrict
-title: "Use the Discord permissions to take away Akis write permissions for all the channels where it should not talk in and users should not run Slash commands in."
+title: "Use the Discord permissions to take away Akis write permissions for all the channels where it should not talk in and users should not run /slash commands in."
 
 ---
 id: bot-question
